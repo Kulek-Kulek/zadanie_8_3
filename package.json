@@ -17,8 +17,8 @@
   },
   "scripts": {
     "test": "npm run test:html && npm run test:js",
-    "test:html": "nu-html-checker *.html",
-    "test:js": "jshint --config=package.json js/*.js",
+    "test:html": "nu-html-checker index.html",
+    "test:js": " jshint js",
     "build:sass": "sass --sourcemap=none sass/style.scss:css/style.css",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
